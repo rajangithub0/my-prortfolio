@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import boy from "../assets/boy.jpg";
+import Rajan from "../assets/Rajan.jpg";
 import { div } from "framer-motion/client";
 
 export default function About() {
@@ -53,7 +53,7 @@ export default function About() {
               transition={{ type: "spring", stiffness: 200, damping: 18 }}
             >
               <img
-                src={boy}
+                src={Rajan}
                 alt=" profile"
                 className="absolute inset-0 border-[#1cd8d2]/25"
               />
@@ -100,17 +100,19 @@ export default function About() {
               </div>
             </div>
           </motion.div>
-          <motion.div className="text-center md:text-left"
-          initial={{opacity:0,x:-30}}
-          whileInView={{opacity:1,x:0}}
-          transition={{duration:0.6,}}
-          viewport={{once:true,amount:0.4}}
+          <motion.div
+            className="text-center md:text-left"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true, amount: 0.4 }}
           >
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">About Me</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+              About Me
+            </h3>
             <p className=" text-gray-300 leading-relaxed text-base sm:text-lg">
               I'm a Software Develper, Web Design and Web Developer - passionate
-              about building fast, resilient application and sharing coding
-              insights on instagrama and You Tube.
+              about building fast, resilient application.
             </p>
             <p className="mt-4 text-gray-400 text-base sm:text-lg">
               I Love turing idea into scalable, user-friendly products that make
